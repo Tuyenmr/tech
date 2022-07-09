@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 900px;
+    height: 700px;
+    background-color: red;
+    margin: 0 auto;
+}
+.imga{
+    
+    width: 200px;
+
+
+}
+.imga img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.content-section{
+    float: left;
+}
+.fix{
+    margin-right: 30px;
+}
+.clear{
+    clear: both;
+}

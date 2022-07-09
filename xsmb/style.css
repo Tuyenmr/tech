@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 1320px;
+}
+.menu{
+    
+    padding-bottom: 2px;
+}
+.menu ul{
+      display: flex;
+      list-style: none;
+      height: 40px;
+      width: 540px;
+    
+    justify-content: space-between;
+    
+}
+.menu ul li{
+    background-color:rgb(201,48,40);
+    width: 33.3333%;
+    border-left: 1px solid #fff;
+    text-align: center;
+}
+.menu ul li:hover{
+    background-color: red;
+}
+.menu ul li a{
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+    
+}
+table{
+    width: 540px;
+    border: 5px solid rgb(126, 126,126);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  
+  /* row -> column */
+  .row > * {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+  }
+  
+  .col-1 {
+    width: 8.333333%;
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.333333%;
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  thead tr,
+  thead th,
+  tbody tr,
+  tbody td {
+    
+    text-align: center ;
+    border: 1px solid;
+    padding: 10px;
+  }
+  tbody td:hover{
+    background-color:#ffbf00;
+  }
+
+  td{
+    width: 60px;
+  }
+ .t1{
+    border-right: 1px solid;
+ }
+ .t2{
+    align-items: center;
+ }

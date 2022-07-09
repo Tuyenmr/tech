@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="https://www.clipartkey.com/mpngs/m/93-934278_driver-icon-driver-icon-vector-png.png"
+      type="image/x-icon"
+    />
+
+    <title>bai1</title>
+  </head>
+  <body>
+    <h1>Phân tích nghiệp vụ: Action - Event - Status</h1>
+    <p>14 tháng 10, 2021 - 433 lượt xem</p>
+    <button>dang nhap</button>
+    <hr />
+    <p>
+      Gần đây tôi tham gia thiết kế một dự án. Các thành viên trong nhóm cứ tạo
+      những bảng có trường status, rồi thêm <br />
+      trường create_date và modified_date nhìn rất giống trong sách. Nhưng họ
+      không hiểu rõ khác biệt giữa Action (Hành động) <br />- Event (Sự kiện) -
+      Status (Trạng thái) trong phân tích thiết kế phần mềm. Kết quả là bảng
+      nhiều, cột nhiều nhưng <br />
+      không xử lý hết yêu cầu nghiệp vụ. Bàn tới bàn lui, mà không giải quyết
+      được nghiệp vụ.
+    </p>
+    <h2>Liệt kê đủ sự kiện / tác vụ phát sinh sau một hành động ban đầu.</h2>
+    <p>
+      Khi khách hàng đặt mua một mặt hàng ~ action: customer orders an item. Có
+      những sự kiện và tác vụ phát sinh:
+    </p>
+    <ol>
+      <li>Event: Đơn hàng được tạo ra ~ order is created.</li>
+      <li>
+        Action: Hệ thống kho kiểm tra số lượng hàng tồn kho - inventory check
+        item availability. Hoặc với shop nhỏ, chỉ cần truy vấn số lượng hàng có
+        sẵn.
+      </li>
+      <li>
+        Nếu mặt hàng ở trạng thái hết hàng (status out of stock) --> action: hệ
+        thống tự động đặt mua bổ xung hàng hoặc trả về thông báo hết hàng hoặc
+        email thông báo cho phòng đặt hàng
+      </li>
+      <li>
+        Liệt kê đủ thì cơ bản hiểu được yêu cầu nghiệp vụ. Nhưng việc chúng ta
+        hiện thực hoá nghiệp vụ như thế nào xin mời đọc tiếp.
+      </li>
+    </ol>
+    <h2>Lưu lại chân thực các sự kiện đã diễn ra - store immutable events</h2>
+    <p>
+      Nếu bạn thiết kế một hệ thống lớn, microservice phức tạp. Ở đó các
+      microservice trao đổi với nhau qua những event <br />, message thi bạn cần
+      phải đọc khá nhiều pattern này nọ, phức tạp. Bài viết này dành cho những
+      bạn sinh viên đang học nghề,<br />
+      code với một CSDL:
+    </p>
+    <ul>
+      <li>
+        Hãy tạo bảng lưu sự kiện: order_event, member_event, inventory_event
+      </li>
+      <li>
+        Tạo bảng lưu giá trị theo thời gian ví dụ lịch sử giá mặt hàng. Mỗi dòng
+        trong đơn hàng, tham chiếu đến giá tại thời <br />
+        điểm đặt hàng. Thay đổi giá hay tạo khuyến mại thì tạo bản ghi lưu giá
+        mới, không sửa trực tiếp vào bản ghi cũ.
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 949px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 580px;
+    
+    border-radius: 8px;
+    border: 1px solid yellow ;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+  }
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -10px;
+  }
+.row >*{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+  }
+  
+  .col-1 {
+    width: 8.333333%;
+    
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+   
+  }
+  
+  
+  .col-3 {
+    width: 25%;
+   
+  }
+  
+  
+  .col-4 {
+    width: 33.333333%;
+    
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  
+  }
+  
+  .col-6 {
+    width: 50%;
+    
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+;
+  }
+  
+  .col-9 {
+    width: 75%;
+    
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+   
+  }
+  
+  .col-12 {
+    width: 100%;
+   
+  }
+  
+  .gap-10 {
+    gap: 10px;
+  }
+
+  .t1{
+    padding: 5px 0;
+  }
+  .input{
+    margin-top: 15px;
+  }
+  .input input[type="text"]{
+    width: 184px;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+  }
+.list-gt{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+.birdday{
+    margin-top: 10px;
+}
+.gioitinh{
+    margin-top: 10px;
+}
+.text1{
+    margin-top: 10px;
+    
+}
+.buttom{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.t11{
+    background-color: #42b72a;
+    border-radius: 6px;
+    border: none;
+  color: #fff;
+}
+.tuyen{
+    align-items: center;
+}
+ 

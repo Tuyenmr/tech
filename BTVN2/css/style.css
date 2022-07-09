@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.web{
+   margin:0 auto;
+   width: 980px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    width: 980px;
+    background-color: #cb7802;
+    height: 100px;
+
+}
+.header a{
+    line-height: 100px;
+    padding: 0 0 0 50px;
+}
+.nav{
+    height: 37px;
+    background: #272f52;;
+}
+.nav .menu ul{
+    list-style: none;
+    
+    
+}
+.nav .menu ul li{
+    float: left;
+
+    padding: 0 15px ;
+    border-right: 1px solid #fff;
+}
+ .menu ul li a
+{
+    text-decoration: none;
+    line-height: 37px;
+    color: white;
+}
+.menu ul li:hover {
+    background: yellow;
+    color: #000;
+} 
+.search button{
+    color:red ;
+    margin: 0 20px 0 100px;
+    border-color:#fff;
+    
+}
+.search{
+    line-height: 37px;
+    float: right;
+}
+
+.content1 h3
+{
+    text-align:center;
+    padding: 20px 0;
+    text-transform:uppercase;
+    color: #272f52;
+}
+.content1 .newitem .newitem1 {
+    width: 28%;
+    padding: 1% ;
+    float: left;
+    border: 1px solid;
+
+}
+
+.fix{
+  margin-left:  4.5%;
+
+}
+.content1 .newitem .newitem1 h4{
+    font-size: 16px;
+    color:#ad3f00 ;
+}
+.content1 .newitem .newitem1 img
+{
+    margin: 10px auto;
+}
+.footer{
+    width: 980px;
+    height: 200px;
+    background:#272f52;
+    margin-top: 50px;
+
+}
+.footer h2{
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+}
+.footer p
+{
+    text-align: center;
+    color: #fff;
+}
+/* gioi thieu chung */
+.text-red{
+    color: red;
+}
+.text-yellow{
+    color: yellow;
+}
+.text-align{
+    text-align: center;
+}
+.text-blue
+{
+    color: blue;
+}
+.list-style{
+    list-style: none;
+}
+/* hoatdongsinhvien */
+
+
+

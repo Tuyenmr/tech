@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#main
+{
+    position: relative;
+}
+
+#header
+{
+    height: 60px;
+    background-color: rgb(48, 89, 140);
+    
+     width: 100%;
+}
+.navi {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+  
+}
+
+
+.logo{
+    flex: 1;
+    padding: 10px 0px 10px 40px;
+    
+}
+.menu{
+    flex: 4;
+}
+#header nav a img
+{
+    max-width: 100px;
+    height: auto; 
+    
+}
+.menu1{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 7px;
+}
+.menu1 li a{
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    color: aliceblue;
+    padding: 0 8px;
+    font-weight: 20px;
+    
+}
+.menu1 li{
+    position: relative;
+    
+    
+}
+.menu1  ul.menu2{
+    position: absolute;
+    background-color:rgb(48, 89, 140);
+    list-style: none;
+    width: 170px;
+    display: none;
+    
+    
+}
+.menu2 li a{
+  text-align: center;
+}
+.menu1 li:hover>ul.menu2 {
+    display: block;
+}
+.menu1 li:hover a{
+    background: #F4F7FA;    ;
+    color: black;
+}
+.menu1 ul.menu2 li:hover a
+{
+    background-color: rgb(59, 190, 175) ;
+    color: #fff;
+}
+.subcontainer{
+    width: 1290px;
+    height: 1500px;
+    background-color: #f4f7f4;
+    margin: 0 auto 0 auto;
+    display: flex;
+    
+}
+.content1{
+width: 938px;
+height: 500px;
+}
+.content11{
+    width: 906px;
+    height: 800px;
+    
+    margin: 0 auto;
+}
+.search{
+    width: 906px;
+    height: 54px;
+    border: 1px solid;
+    background: #F4F7FA;
+    margin-top: 30px;
+
+}
+.search input{
+    margin-top: 6px;
+}
+
+.content2{
+width: 278px;
+height: 1500px;
+background-color: #f4f7f4;
+
+
+}
+.search22{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.search22 li:hover{
+    border-color: yellow;
+}
+.search22 li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid;
+    
+
+
+}
+.search22 li a{
+   text-decoration: none;
+   
+}
+.list {
+    width: 906px;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.sublist
+{
+    width: 30%;
+    
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.sublist img {
+    max-width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    min-height: 202px;
+    max-height: 202px;
+}
+.t1{
+    margin: 10px;
+    
+}
+.t1 h3{
+    font-size: 17px;
+}
+.t2{
+    padding: 10px 0;
+    word-break:break-word;
+}
+
+.sublist:hover{
+    border: 1px solid;
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.526),
+    0 6px 20px 0 rgba(0, 0, 0, 0.537);
+    
+}
+.content2-items{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    word-break: break-word;
+    justify-content:space-between
+}
+.content2-items li a:hover{
+    text-decoration: underline ;
+}
+
+.content2-items li{
+    padding: 10px;
+}
+.content2-items li a
+{
+    text-decoration: none;
+}
+.content2-items li span{
+    padding: 0 6px;
+    font-size: 30px;
+}
+.content2-header{
+    margin-top: 30px;
+}
+
+.content2-header h3{
+    font-size: 25px;
+}
+.footer{
+    height: 500px;
+    background-color: rgb(48, 89, 140);
+    color: #fff;
+    
+    
+}
+.footer2{
+    padding: 50px 80px 0 8px;
+    margin-left: 30px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-items{
+    width: 20%;
+}
+.footer-subitem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-break: break-word;
+    
+
+}
+.footer-subitem li{ 
+    padding: 10px 0 10px 0;
+}
+.footer-subitem li span
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.footer-subitem li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.footer-subitem li a:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+.footer-subitem li span:hover{
+    color:yellow;
+    text-decoration: underline;
+}
