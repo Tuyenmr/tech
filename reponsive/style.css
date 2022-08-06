@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* row -> column */
+  .row > * {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+  }
+  
+  .col-1 {
+    width: 8.333333%;
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.333333%;
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .j-center {
+    justify-content: center;
+  }
+  
+  .j-end {
+    justify-content: end;
+  }
+  
+  .j-between {
+    justify-content: space-between;
+  }
+  
+  .a-center {
+    align-items: center;
+  }
+  .box{
+    
+    background-color: red;
+    color: wheat;
+  }
+  
+
+  .item{
+    display: flex;
+
+    overflow: hidden;
+  }
+  
+   /*kích thuớc màn hình vượt quá 576px -sm*/
+  @media screen and (min-width:576px){
+    .box{
+        background-color: blue;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list-item{
+        display: flex;
+        flex-direction: column;
+      }
+      .item{
+        display: flex;
+      
+
+        flex-direction: column;
+      }
+  }
+  @media screen and (min-width:768px){
+    .box{
+        background-color: yellow;
+        max-width: 740px;
+        ;
+    }
+    .list-item{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+      }
+      .item{
+        width: 50%;
+        flex-direction: row;
+      }
+  }
+  @media screen and (min-width:992px){
+    .box{
+        background-color: pink;
+        max-width: 960px;
+        ;
+    }
+    .list-item{
+        display: flex;
+      }
+      .item{
+        width: 33%;
+        flex-direction: row;
+      }
+  }
+  @media screen and (min-width:1200px){
+    .box{
+        background-color: black;
+        max-width: 1160px;
+        ;
+    }
+    .list-item{
+        display: flex;
+      }
+      .item{
+        width: 25%;
+        flex-direction: row;
+      }
+  }
+  @media screen and (min-width:1440px){
+    .box{
+        background-color: pink;
+        max-width: 1400px;
+        ;
+    }
+    .list-item{
+        display: flex;
+      }
+      .item{
+        width: 20%;
+        flex-direction: row;
+      }
+  }

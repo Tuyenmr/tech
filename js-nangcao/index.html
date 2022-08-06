@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic</title>
+</head>
+
+<body>
+    <h1 class="heading">Hello DOM</h1>
+
+    <img class="avatar" src="" alt="" />
+
+    <a class="profile" rel="stylesheet" href="">fffprofile</a>
+
+    <ul class="favorite">
+        <li class="tuyen">A</li>
+        <li>Play game </li>
+        <li>Listen music</li>
+        <li>D</li>
+    </ul>
+
+    <div class="clock">Bây giờ là</div>
+
+    <p class="bio">
+        Thầy giáo ba đẹp trai Thầy giáo Ba đẹp trai Thầy giáo ba đẹp trai
+        Thầy giáo Ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo Ba đẹp trai
+        Thầy giáo Ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai
+        Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai
+        Thầy giáo Ba đẹp trai Thầy giáo Ba đẹp trai Thầy giáo ba đẹp trai
+    </p>
+
+    <p class="num-of-words">aaaa</p>
+
+    <table class="list-students">
+        <tbody>
+            <tr>
+                <td>Giang Hồng Sơn</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Bùi Lan Nhi</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Hoàng Thị Ngọc Linh</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div id="app">
+
+    </div>
+
+    <script>
+        const heading = "Thầy giáo Ba đẹp trai 🤓";
+        const avatar = "https://s199.imacdn.com/vg/2022/04/13/36b4627cc00756d8_1508b8decf0e730a_53012716498674109118684.jpg";
+        const profile = "https://twitter.com/banx9x";
+
+        document.title = heading;
+        const h1 = document.querySelector('.heading');
+        h1.textContent = heading
+        //3
+        const img = document.querySelector('.avatar')
+        img.src = avatar
+        //4
+        const a = document.querySelector('a')
+        a.textContent = profile
+        //5
+        const favorite = document.querySelector('.favorite')
+        const li1 = favorite.lastElementChild;
+        li1.textContent = 'code application'
+        //7
+        let date = new Date();
+        const thoigian = document.querySelector('.clock')
+        thoigian.textContent += ' ' + date.getHours() + 'h ' + date.getMinutes()
+
+        //vidu
+        const avatartuyen = document.createElement('img')
+        avatartuyen.src = 'https://s199.imacdn.com/vg/2022/04/13/36b4627cc00756d8_1508b8decf0e730a_53012716498674109118684.jpg'
+
+        const app = document.querySelector('#app')
+        app.append(avatartuyen)
+        //8
+        let dem = document.querySelector('.bio').textContent
+        let ba = dem.split(' ')
+        let ok = 0
+        for (let i = 0; i < ba.length; i++) {
+            if (ba[i] == 'ba' || ba[i] == "Ba")
+                ok++;
+        }
+        document.querySelector(".num-of-words").textContent = "Đoạn văn trên có " + ok + " từ Ba";
+        //9
+        //tham chiếu đến bảng
+        let tableRef = document.querySelector(".list-students");
+
+        // chèn hàng vào cuối bảng
+        let newRow = tableRef.insertRow(3); //3
+
+        //Chèn một ô trong hàng tại chỉ mục 0
+        let newCell = newRow.insertCell(0);
+
+        //Nối một nút văn bản vào ô
+        let newText = document.createTextNode("Ba gà");
+        newCell.appendChild(newText);
+        let newCell2 = newRow.insertCell(1);
+
+        let newText2 = document.createTextNode("Thầy giáo Ba siêu cấp đẹp trai");
+        newCell2.appendChild(newText2);
+        function createTable() {
+            var div = document.createElement("div");
+            div.setAttribute("class", "tbl");
+            document.body.appendChild(div);
+            document.querySelector(".tbl").innerHTML =
+                "<table border = '1'>" +
+                "<tr>" +
+                "<td style = 'background: red'>1 : 1</td>" +
+                "<td>1 : 2</td>" +
+                "<td>1 : 3</td>" +
+                "<td>1 : 4</td>" +
+                "<td>1 : 5</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>2 : 1</td>" +
+                "<td style = 'background: red'>2 : 2</td>" +
+                "<td>2 : 3</td>" +
+                "<td>2 : 4</td>" +
+                "<td>2 : 5</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>3 : 1</td>" +
+                "<td>3 : 2</td>" +
+                "<td style = 'background: red'>3 : 3</td>" +
+                "<td>3 : 4</td>" +
+                "<td>3 : 5</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>4 : 1</td>" +
+                "<td>4 : 2</td>" +
+                "<td>4 : 3</td>" +
+                "<td style = 'background: red'>4 : 4</td>" +
+                "<td>4 : 5</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>5 : 1</td>" +
+                "<td>5 : 2</td>" +
+                "<td>5 : 3</td>" +
+                "<td>5 : 4</td>" +
+                "<td style = 'background: red'>5 : 5</td>" +
+                "</tr>";
+        }
+        createTable()
+
+
+
+    </script>
+</body>
+
+</html>

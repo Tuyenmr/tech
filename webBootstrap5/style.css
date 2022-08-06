@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (max-width:992px)
+ {
+    .tuyen{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:992px)
+ {
+    
+    .btn3{
+        display: none;
+    }
+    .carousel-item{
+        height: 95vh;
+    }
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Bubbles', cursive;
+}
+
+.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+.nav-link:hover{
+    color: yellow;
+}
+.btn3{
+    height: 40px;
+    border: none;
+    outline: none;
+    font-weight: 70px;
+    background-color: white;
+    margin-left: 18%;
+    
+}
+.search{
+height: 40px;
+width: 80%;
+border-radius: 60px;
+outline: none;
+border: 2px solid pink;
+margin-right: -35px;
+}
+.btn0{
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border: none;
+    color: white;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    font-weight: 70px;
+    background-color: red;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+.bt1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: red;
+    border-radius: 60px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.img1{
+    width: 100%;
+    vertical-align: middle;
+}
+h1{
+    font-weight: 700;
+}
+.img2{
+    width: 100%;
+    vertical-align: middle;
+}
+.bt1:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+cursor: pointer;
+transition: 0.5s;
+}
+footer{
+    background: black;
+    width: 100%;
+   
+    color: white;
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        form {
+            border: 1px solid;
+            margin: 0px auto;
+        }
+
+        select {
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="t">
+            <h2>Tip Calulator</h2>
+            <p>bill amout</p>
+            <input type="text" name="" id="t1">
+            <p>number of guests</p>
+            <input type="text" id="t2">
+            <p>sevice quanlity </p>
+            <select name="tuyen" id="t3">
+                <option value="0.3">30%</option>
+                <option value="0.2">20%</option>
+                <option value="0.4">40%</option>
+                <option value="0.1">10%</option>
+            </select>
+            <p class="p">tip</p>
+            <button>summit</button>
+        </form>
+
+    </div>
+    <script>
+        let tip = document.querySelector('.t')
+        tip.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let tuyen1 = document.querySelector('#t1').value;
+            let tuyen2 = document.querySelector('#t2').value;
+            let tuyen3 = document.querySelector('#t3').value;
+            let tuyen4 = (tuyen1 * tuyen3) / tuyen2
+            document.querySelector('.p').textContent = `$${tuyen4}`
+
+        })
+    </script>
+</body>
+
+</html>

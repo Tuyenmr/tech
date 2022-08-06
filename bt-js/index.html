@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <script>
+        let tuyen = document.querySelectorAll('div')
+
+        tuyen.forEach(function (item) {
+            return item.setAttribute('class', 'tuyen')
+        })
+
+
+        let tuyen2 = [1, 2, 3, 5, 6, 7];
+        tuyen2.forEach(function (item) {
+            return item + 3;
+        })
+        console.log(tuyen2)
+
+    </script>
+</body>
+
+</html>

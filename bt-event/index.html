@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="property"></div>
+        <div class="action">
+            <div class="">
+                Click button below to change the background color
+            </div>
+            <div class="content">
+
+            </div>
+            <button class="btn-change">Change</button>
+        </div>
+    </div>
+    <script>
+        function RandomHuong() {
+            let huong = ['to top', 'to right', 'to bottom', 'to left']
+            return huong[Math.floor(Math.random() * huong.length)]
+        }
+        function randomText() {
+            const text = "1234567890abcdef";
+            let arr = [];
+            for (let i = 0; i < 6; i++)
+                arr.push(text[Math.floor(Math.random() * text.length)]);
+            return "#".concat(arr.join(""));
+        }
+        let btn = document.querySelector('.btn-change')
+        btn.addEventListener('click', function () {
+            let dir = RandomHuong();
+            let color1 = randomText();
+            let color2 = randomText();
+            let tuyen = `linear-gradient(${dir}, ${color1}, ${color2})`
+            document.body.style.backgroundImage = tuyen
+            document.querySelector('.content').textContent = `huong: ${RandomHuong()}, ma mau: ${randomText()}`
+        })
+
+    </script>
+
+</body>
+
+</html>

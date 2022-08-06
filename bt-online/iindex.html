@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #dadada;
+        }
+
+        .container {
+            width: 40%;
+            margin: 50px auto;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .main {
+            border: 3px solid blue;
+            border-radius: 10px;
+            max-height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .control1 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            left: 10px;
+        }
+
+        .control2 {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .list-img {
+            height: 80px;
+            display: flex;
+            cursor: pointer;
+            overflow: hidden;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .imgChinh {
+            transition: 1s;
+            border-radius: 10px;
+        }
+
+        .list-img div {
+            flex: 1;
+            padding: 3px;
+        }
+
+        .list-img img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+
+        .active {
+            border: 3px solid yellow;
+            border-radius: 10px;
+        }
+
+        @keyframes silideleft {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes silidePhai {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/294946785_3184406221807835_1235760854731094757_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=0X0Hp9hJeHUAX_1YJkn&_nc_ht=scontent.fhan15-1.fna&oh=03_AVITvlA2CQEeVDkwvd21pVFWA14GXyifdNVtERPRabdrtQ&oe=63060AE6"
+                alt="" class="imgChinh" />
+            <div class="control1">
+                <h1><i class="bi bi-arrow-left-square-fill"></i></h1>
+            </div>
+            <div class="control2">
+                <h1><i class="bi bi-arrow-right-square-fill"></i></h1>
+            </div>
+        </div>
+        <div class="list-img">
+            <div class="active">
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/294946785_3184406221807835_1235760854731094757_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=0X0Hp9hJeHUAX_1YJkn&_nc_ht=scontent.fhan15-1.fna&oh=03_AVITvlA2CQEeVDkwvd21pVFWA14GXyifdNVtERPRabdrtQ&oe=63060AE6"
+                    alt="" style=" border-bottom-left-radius: 10px;" />
+            </div>
+
+            <div>
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/294785611_794078185085663_2443341423217832044_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=K8HgsFBhwE8AX-GVYP4&_nc_ht=scontent.fhan15-1.fna&oh=03_AVJWaNs0Gp6pnPqCu3rmFKA96a0I_Oi9QSeQti7QjvwzoQ&oe=63053302"
+                    alt="" />
+            </div>
+
+            <div>
+                <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t1.15752-9/294846576_438930821447206_5308546501435633347_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=JpK_nW1DfqEAX_y25jx&_nc_ht=scontent.fhan5-8.fna&oh=03_AVK6Pc2cHRmP0kMs80LB0MEAgPiG3dhPYEojjoNca8nTNQ&oe=6302FB48"
+                    alt="" />
+            </div>
+
+            <div>
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/295115723_488109143121980_8638971316210145666_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=8RfWQjA4I20AX8L6B2D&_nc_oc=AQmFW2kVJ4b1MemTG4Ut1ufCOO4vaj7LtrL1EPde3MrR48gLy7RcwhsbjevMcHoO7kNQGOes8L2wBCtJr1SrVczv&_nc_ht=scontent.fhan15-1.fna&oh=03_AVI9L1z45x9eXNFhQB_gdQVDIOLf0XZ_tyZ3JzqBm0cG5w&oe=6302C923"
+                    alt="" />
+            </div>
+
+            <div>
+                <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t1.15752-9/295016224_334525745432677_3426938112121415735_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=lRIfLgpdgFYAX-lw7zv&_nc_ht=scontent.fhan5-8.fna&oh=03_AVJPib0gcDChdb0PN2aNdSYsDlTvdUTv61i5zCI1aC8neA&oe=6302F127"
+                    alt="" />
+            </div>
+            <div>
+                <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/294685665_318248457106182_9092903362103760292_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=XtWolDr_y5wAX-R02dc&_nc_ht=scontent.fhan15-2.fna&oh=03_AVKULk1SiBgNCCCGu4tKoPiXSpPkuHdQUXOMDRCmxFtvtg&oe=6301E127"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+    <script>
+        var imgCHinh = document.querySelector(".imgChinh");
+        var listImage = document.querySelectorAll(".list-img img");
+
+        var control1 = document.querySelector(".control1");
+        var control2 = document.querySelector(".control2");
+        let currentIndex = 0;
+        function upadateIndex(index) {
+            document.querySelectorAll(".list-img div").forEach((item) => {
+                item.classList.remove("active");
+            });
+            currentIndex = index;
+            imgCHinh.src = listImage[index].src;
+            listImage[index].parentElement.classList.add("active");
+        }
+
+        listImage.forEach((item, index) => {
+            item.addEventListener("click", (e) => {
+                imgCHinh.style.opacity = "0";
+
+                setTimeout(() => {
+                    upadateIndex(index);
+                    imgCHinh.style.opacity = "1";
+                }, 400);
+            });
+        });
+        control1.addEventListener("click", function (e) {
+            if (currentIndex == 0) {
+                currentIndex = listImage.length - 1;
+            } else {
+                currentIndex--;
+            }
+            imgCHinh.style.animation = "";
+
+            setTimeout(() => {
+                upadateIndex(currentIndex);
+                imgCHinh.style.animation = "silideleft 0.5s ease-in-out forwards";
+            }, 200);
+        });
+        control2.addEventListener("click", function (e) {
+            if (currentIndex == listImage.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            imgCHinh.style.animation = "";
+            setTimeout(() => {
+                upadateIndex(currentIndex);
+                imgCHinh.style.animation = "silidePhai 0.5s ease-in-out forwards";
+            }, 200);
+        });
+
+        chageImage = function () {
+            //let srcs = ["https://www.w3schools.com/howto/img_nature_wide.jpg", "https://www.w3schools.com/howto/img_lights_wide.jpg", "https://www.w3schools.com/howto/img_lights_wide.jpg", 'https://www.w3schools.com/howto/img_snow_wide.jpg', 'https://www.w3schools.com/howto/img_snow_wide.jpg']
+
+            document.querySelector(".imgChinh").src = listImage[currentIndex].src;
+            currentIndex++;
+            if (currentIndex == listImage.length) {
+                currentIndex = 0;
+            }
+            imgCHinh.style.animation = "";
+
+            setTimeout(() => {
+                upadateIndex(currentIndex);
+                imgCHinh.style.animation = "silideleft 0.5s ease-in-out forwards";
+            }, 200);
+        };
+        setInterval(chageImage, 5000);
+    </script>
+</body>
+
+</html>
