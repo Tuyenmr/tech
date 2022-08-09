@@ -51,10 +51,30 @@ counters.forEach((counter) => {
     const increment = target / 200;
     if (c < target) {
       counter.innerText = ` ${Math.ceil(c + increment)} `;
-      setTimeout(update, 120);
+      setTimeout(update, 100);
     } else {
       counter.innerText = target;
     }
   };
   update();
 });
+
+function dongho() {
+  var today = new Date();
+  var gio = today.getHours();
+  var phut = today.getMinutes();
+  var giay = today.getSeconds();
+
+  if (gio < 10) {
+    gio = "0" + gio;
+  }
+  if (phut < 10) {
+    phut = "0" + phut;
+  }
+  if (giay < 10) {
+    giay = "0" + giay;
+  }
+  document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+  setTimeout("dongho()", 1000);
+}
+dongho();

@@ -476,7 +476,18 @@ section{
 .box{
     cursor: pointer;
 }
-
+#time{
+    background: var(--green);
+    padding: 10px;
+    color: var(--black);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 30px;
+    font-family: Verdana;
+}
 
 
 
